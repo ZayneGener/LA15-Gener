@@ -1,0 +1,9 @@
+<h1> My Blog List </h1>
+
+<ul>
+    {% for blog in blog_list %}
+    <li>
+        <a href="/blog/{{ blog.id }}">{{ blog.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
